@@ -18,13 +18,13 @@
 
 
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
+            <li class="main-nav__item">
               <a href="#"> Главная </a>
             </li>
             <li class="main-nav__item">
               <a href="#"> Каталог продукции </a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--active">
               <a href="#"> Подбор программы </a>
             </li>
           </ul>
@@ -150,9 +150,26 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
+
+        <section class="page-footer__location location">
+          <div class="location__wrapper">
+            <h2 class="visually-hidden">Наше местоположение</h2>
+
+            <div class="location__info">
+              <p class="location__promo">приглашаем к сотрудничеству дилеров!</p>
+
+              <p class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            </div>
+
+            <div class="location__map">
+
+            </div>
+          </div>
+        </section>
+
         <img class="page-footer__text-logo text-logo" src="img/text-logo.svg" width="101" height="18" alt="Cat Energy" />
 
-        <div class="page-footer__social social">
+        <section class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
@@ -171,12 +188,12 @@
             </li>
           </ul>
         </div>
+      </section>
 
-        <div class="page-footer__copyright copyright">
+        <section class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           <img class="copyright__img" src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
-        </div>
-      </div>
+        </section>
     </footer>
   </body>
 </html>
