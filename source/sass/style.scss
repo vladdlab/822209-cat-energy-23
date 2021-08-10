@@ -1,1 +1,39 @@
-// Начните писать стили здесь
+@import './fonts.scss';
+@import './variables.scss';
+
+@import './base/header.scss';
+@import './base/button.scss';
+@import './base/check.scss';
+@import './base/link.scss';
+@import './base/radio.scss';
+@import './base/input.scss';
+@import './base/label.scss';
+@import './base/textarea.scss';
+@import './base/visually-hidden.scss';
+
+@import './layout/main-nav.scss';
+@import './layout/page-footer.scss';
+@import './layout/page-header.scss';
+@import './layout/page-main.scss';
+@import './layout/page.scss';
+
+@import './index/examples.scss';
+@import './index/programs.scss';
+@import './index/promo.scss';
+@import './index/slider.scss';
+@import './index/stats.scss';
+@import './index/workflow.scss';
+
+@import './catalog/additional-goods.scss';
+@import './catalog/attributes.scss';
+@import './catalog/gift.scss';
+@import './catalog/good.scss';
+@import './catalog/main-goods.scss';
+@import './catalog/rest-goods.scss';
+
+@import './form/input-list.scss';
+@import './form/program-form.scss';
+
+@import './footer/copyright.scss';
+@import './footer/location.scss';
+@import './footer/social.scss';
