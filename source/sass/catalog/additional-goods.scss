@@ -1,9 +1,5 @@
-.additional-goods {
-
-}
-
 .additional-goods__header {
-  margin: 1.04em 0.833em 1.46em;
+  margin: 1.04em 0.83em 1.46em;
 }
 
 .additional-goods__list {
@@ -13,13 +9,13 @@
 }
 
 .additional-goods__item {
-  border-top: 1px solid #EBEBEB;
+  border-top: 1px solid #ebebeb;
 
   &:last-child {
-    border-bottom: 1px solid #EBEBEB;
+    border-bottom: 1px solid #ebebeb;
   }
 }
 
 .additional-goods__gift {
-  margin: 2.1875em 1.25em;
+  margin: 2.1em 1.25em;
 }

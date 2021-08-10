@@ -4,7 +4,7 @@
 
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     display: block;
     top: 0;
     right: 0;
@@ -18,24 +18,23 @@
     background-color: rgba(104, 183, 56, 0.85);
     background-blend-mode: soft-light;
   }
-
 }
 
 .promo__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 1.6875em 1.25em 0;
+  padding: 1.69em 1.25em 0;
 }
 
 .promo__header {
   font-size: 2.25rem;
   line-height: 1;
   font-weight: 400;
-  margin: 0 0 0.695em;
+  margin: 0 0 0.69em;
 }
 
 .promo__slogan {
-  font-size: 0.875rem;
+  font-size: 0.88rem;
   text-transform: uppercase;
   margin: 0 0 2.14em;
 }

@@ -1,7 +1,3 @@
-.programs {
-
-}
-
 .programs__wrapper {
   padding: 1.25em 1.25em 0;
 }
@@ -10,7 +6,6 @@
   list-style: none;
   margin: 0;
   padding: 0;
-
 }
 
 .programs__item {
@@ -19,14 +14,6 @@
 
   &:first-child {
     margin-bottom: 1.25em;
-  }
-
-  &--slimming {
-
-  }
-
-  &--weight-gain {
-
   }
 }
 
@@ -40,12 +27,8 @@
 }
 
 .programs__description {
-  margin: 1.643em 0;
+  margin: 1.64em 0;
 
-  font-size: 0.875rem;
+  font-size: 0.88rem;
   font-family: "Arial", serif;
-}
-
-.programs__link {
-
 }

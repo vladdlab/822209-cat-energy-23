@@ -1,16 +1,12 @@
-.main-nav {
-
-}
-
 .main-nav__toggle {
   border: none;
   height: 1em;
   width: 1.5em;
   font-size: 1rem;
+  background: url("../../img/icons/mobile_nav_toggle.svg") center/contain no-repeat;
 
-  background: url('../../img/icons/mobile_nav_toggle.svg') center/contain no-repeat;
   &--opened {
-    background: url('../../img/icons/mobile_nav_toggle--opened.svg') center/contain no-repeat;
+    background: url("../../img/icons/mobile_nav_toggle--opened.svg") center/contain no-repeat;
   }
 }
 
@@ -21,14 +17,10 @@
 }
 
 .main-nav__item {
-  border-top: 1px solid #E6E6E6;
+  border-top: 1px solid #e6e6e6;
 
   &:last-child {
-    border-bottom: 1px solid #E6E6E6;
-  }
-
-  &--active {
-
+    border-bottom: 1px solid #e6e6e6;
   }
 }
 
