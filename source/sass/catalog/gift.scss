@@ -1,0 +1,18 @@
+.gift {
+  padding: 2.5em;
+  box-sizing: border-box;
+  width: calc(100% - 2.5em);
+  height: 289px;
+  background-image: url("../../img/catalog/gift-photo-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.gift__promo-text {
+  color: $white;
+  font-family: "Arial", serif;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  text-align: center;
+}
