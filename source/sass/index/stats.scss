@@ -1,0 +1,32 @@
+.stats {
+
+}
+
+.stats__item {
+
+  &--block {
+    .stats__number {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+    }
+
+    .stats__description {
+      font-size: 0.875rem;
+      font-family: "Arial", serif;
+      color: $special_dark-grey;
+      text-transform: none;
+      margin: 0;
+    }
+  }
+}
+
+.stats__number {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+.stats__description {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  margin: 0;
+}

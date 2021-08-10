@@ -1,0 +1,51 @@
+.programs {
+
+}
+
+.programs__wrapper {
+  padding: 1.25em 1.25em 0;
+}
+
+.programs__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.programs__item {
+  padding: 1.25em;
+  background: $basic_grey;
+
+  &:first-child {
+    margin-bottom: 1.25em;
+  }
+
+  &--slimming {
+
+  }
+
+  &--weight-gain {
+
+  }
+}
+
+.programs__title {
+  margin: 0;
+
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.54;
+  text-transform: uppercase;
+}
+
+.programs__description {
+  margin: 1.643em 0;
+
+  font-size: 0.875rem;
+  font-family: "Arial", serif;
+}
+
+.programs__link {
+
+}

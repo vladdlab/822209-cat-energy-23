@@ -1,0 +1,47 @@
+.promo {
+  color: $white;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    height: 350px;
+    background-image: url("../../img/index/index-background-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(104, 183, 56, 0.85);
+    background-blend-mode: soft-light;
+  }
+
+}
+
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1.6875em 1.25em 0;
+}
+
+.promo__header {
+  font-size: 2.25rem;
+  line-height: 1;
+  font-weight: 400;
+  margin: 0 0 0.695em;
+}
+
+.promo__slogan {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  margin: 0 0 2.14em;
+}
+
+.promo__img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+}
