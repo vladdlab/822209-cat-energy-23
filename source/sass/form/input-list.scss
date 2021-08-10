@@ -1,0 +1,23 @@
+.input-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &--section {
+    padding: 1.25em;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+  }
+}
+
+.input-list__item {
+  font-size: 1rem;
+  line-height: 1.13;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+  margin-bottom: 0.81em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

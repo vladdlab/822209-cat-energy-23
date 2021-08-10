@@ -1,0 +1,16 @@
+.button {
+  display: block;
+  width: 100%;
+  padding: 0.71em;
+  text-align: center;
+  box-sizing: border-box;
+  border: none;
+
+  font-size: 0.88rem;
+  line-height: 1.28;
+  color: $white;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background: $basic_green;
+}

@@ -2,30 +2,34 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__wrapper"></div>
-      <a class="page-header__logo">
-        <img src="img/logo-mobile.svg" width="33" height="38" alt="Интернет магазин 'Кэт энерджи'" />
-      </a>
+      <div class="page-header__wrapper">
 
-      <img class="page-header__text-logo text-logo" src="img/text-logo.svg" width="101" height="18" alt="Cat Energy" />
+      <div class="page-header__inner">
+        <a class="page-header__logo">
+          <img src="img/logo-mobile.svg" width="33" height="38" alt="Интернет магазин 'Кэт энерджи'" />
+        </a>
+
+        <img class="page-header__text-logo text-logo" src="img/text-logo.svg" width="101" height="18" alt="Cat Energy" />
+      </div>
+
 
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-
-
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="#"> Главная </a>
-            </li>
-            <li class="main-nav__item main-nav__item--active">
-              <a href="#"> Каталог продукции </a>
+              <a class="main-nav__link" href="/index.html"> Главная </a>
             </li>
             <li class="main-nav__item">
-              <a href="#"> Подбор программы </a>
+              <a class="main-nav__link main-nav__item--active" href="/catalog.html"> Каталог продукции </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="/form.html"> Подбор программы </a>
             </li>
           </ul>
       </nav>
@@ -34,7 +38,7 @@
 
     <main class="page-main">
       <div class="page-main__wrapper">
-        <h1 class="page-main__header">Каталог продукции</h1>
+        <h1 class="page-main__header header header--1">Каталог продукции</h1>
 
         <section class="main-goods">
           <h2 class="visually-hidden">Основные товары</h2>
@@ -218,7 +222,7 @@
         </section>
 
         <section class="additional-goods">
-          <h2 class="additional-goods__header">Дополнительные товары</h2>
+          <h2 class="additional-goods__header header header--2">Дополнительные товары</h2>
 
           <ul class="additional-goods__list">
             <li class="additional-goods__item">
@@ -282,7 +286,7 @@
             </li>
           </ul>
 
-          <article class="gift">
+          <article class="additional-goods__gift gift">
             <p class="gift__promo-text">Закажите все и получите чехол для кота в подарок!</p>
           </article>
         </section>
@@ -293,12 +297,13 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
 
-        <section class="page-footer__location location">
+        <section class="page-footer__location location location--grey">
           <div class="location__wrapper">
             <h2 class="visually-hidden">Наше местоположение</h2>
 
             <div class="location__info">
               <p class="location__promo">приглашаем к сотрудничеству дилеров!</p>
+
               <p class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
             </div>
 
@@ -308,33 +313,35 @@
           </div>
         </section>
 
-        <img class="page-footer__text-logo text-logo" src="img/text-logo.svg" width="101" height="18" alt="Cat Energy" />
+        <div class="page-footer__inner">
+          <img class="page-footer__text-logo text-logo" src="img/text-logo.svg" width="101" height="18" alt="Cat Energy" />
 
-        <section class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-            </li>
+          <section class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+              </li>
 
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"
-                >Мы в Инстаграме</a
-              >
-            </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"
+                  >Мы в Инстаграме</a
+                >
+              </li>
 
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
-                >Мы в Фейсбуке</a
-              >
-            </li>
-          </ul>
-        </div>
-      </section>
-
-        <section class="page-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <img class="copyright__img" src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
+                  >Мы в Фейсбуке</a
+                >
+              </li>
+            </ul>
         </section>
+
+          <section class="page-footer__copyright copyright">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <img class="copyright__img" src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
+          </section>
+        </div>
+
     </footer>
   </body>
 </html>

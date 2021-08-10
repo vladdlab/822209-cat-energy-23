@@ -1,0 +1,23 @@
+.location {
+  &--grey {
+    background-color: $basic_grey;
+  }
+}
+
+.location__wrapper {
+  padding: 1.75em 1.25em 1.63em;
+}
+
+.location__promo {
+  font-size: 1rem;
+  line-height: 1.25;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.location__address {
+  font-family: "Arial", serif;
+  font-size: 0.88rem;
+  color: $special_dark-grey;
+  margin: 0;
+}

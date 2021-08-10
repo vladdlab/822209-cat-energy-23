@@ -1,0 +1,25 @@
+.rest-goods {
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  padding: 1.25em 1.25em 1.56em;
+}
+
+.rest-goods__header {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25;
+  margin: 0 0 0.5em;
+}
+
+.rest-goods__desc {
+  font-size: 0.75rem;
+  line-height: 1.33;
+  font-family: "Arial", serif;
+  color: $special_dark-grey;
+  margin: 0 0 1.66em;
+}
+
+.rest_goods__show-more {
+  background: #f2f2f2;
+  color: $special_dark-grey;
+}
