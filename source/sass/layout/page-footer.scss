@@ -1,3 +1,7 @@
+.page-footer {
+  background-color: $basic_grey;
+}
+
 .page-footer__location {
   &--grey {
     background-color: $basic_grey;
@@ -6,13 +10,31 @@
 
 .page-footer__inner {
   padding: 2.5em 1.25em 1.38em;
-  background-color: $basic_grey;
+
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .page-footer__text-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 2em;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
 }
 
 .page-footer__social {
   margin-bottom: 1.38em;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }

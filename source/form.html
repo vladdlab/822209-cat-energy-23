@@ -8,7 +8,7 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__wrapper">
+      <div class="page-header__wrapper wrapper">
 
       <div class="page-header__inner">
         <a class="page-header__logo">
@@ -39,12 +39,12 @@
     <main class="page-main">
       <div class="page-main__wrapper">
         <form class="program-form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="program-form__info">
+          <div class="program-form__info wrapper">
             <h1 class="program-form__header header header--1">Подбор программы</h1>
             <p class="program-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           </div>
 
-          <section class="program-form__general">
+          <section class="program-form__general wrapper">
             <h2 class="visually-hidden">Основная информация</h2>
 
             <section class="program-form__pet-info">
@@ -91,10 +91,9 @@
                 </li>
               </ul>
             </section>
-
           </section>
 
-          <section class="program-form__pet-owner">
+          <section class="program-form__pet-owner wrapper">
             <h2 class="program-form__section-title header header--2">Контактеные данные (владельца кота)</h2>
 
             <div class="program-form__field">
@@ -107,14 +106,14 @@
             </div>
           </section>
 
-          <section class="program-form__comment">
+          <section class="program-form__comment wrapper">
             <h2 class="program-form__section-title header header--2">Комментарий</h2>
 
             <label class="visually-hidden" for="comment">Расскажите обо всех повaдках кота</label>
             <textarea class="program-form__comment-input textarea" name="comment" id="comment" rows="10" placeholder="Расскажите обо всех повaдках кота"></textarea>
           </section>
 
-          <section class="program-form__additional">
+          <section class="program-form__additional wrapper">
             <h2 class="program-form__section-title header header--2">Дополнительно</h2>
             <ul class="program-form__options input-list">
               <li class="program-form__option input-list__item">
@@ -148,7 +147,7 @@
             </ul>
           </section>
 
-          <div class="program-form__submit-wrapper">
+          <div class="program-form__submit-wrapper wrapper">
             <button class="program-form__submit button" type="submit">Отправить заявку</button>
             <span class="program-form__legend">* — Обязательные поля</span>
           </div>
@@ -160,13 +159,16 @@
       <div class="page-footer__wrapper">
 
         <section class="page-footer__location location location--grey">
-          <div class="location__wrapper">
+          <div class="location__wrapper wrapper">
             <h2 class="visually-hidden">Наше местоположение</h2>
 
             <div class="location__info">
               <p class="location__promo">приглашаем к сотрудничеству дилеров!</p>
 
-              <p class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+              <p class="location__address">
+                <span class="location__street">ул. Большая Конюшенная, д. 19/8 </span>
+                <span class="location__city">Санкт-Петербург</span>
+              </p>
             </div>
 
             <div class="location__map">
@@ -175,8 +177,10 @@
           </div>
         </section>
 
-        <div class="page-footer__inner">
-          <img class="page-footer__text-logo text-logo" src="img/text-logo.svg" width="101" height="18" alt="Cat Energy" />
+        <div class="page-footer__inner wrapper">
+          <div class="page-footer__text-logo">
+            <img class="text-logo" src="img/text-logo.svg" width="101" height="18" alt="Cat Energy" />
+          </div>
 
           <section class="page-footer__social social">
             <ul class="social__list">
