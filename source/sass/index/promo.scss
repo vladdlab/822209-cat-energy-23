@@ -2,6 +2,10 @@
   color: $white;
   position: relative;
 
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    color: $black;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -17,6 +21,10 @@
     background-size: cover;
     background-color: rgba(104, 183, 56, 0.85);
     background-blend-mode: soft-light;
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      display: none;
+    }
   }
 }
 
@@ -24,6 +32,11 @@
   display: flex;
   flex-direction: column;
   padding: 1.69em 1.25em 0;
+
+  @media (min-width: $desktop-width) {
+    max-height: 500px;
+    flex-wrap: wrap;
+  }
 }
 
 .promo__header {
@@ -31,16 +44,40 @@
   line-height: 1;
   font-weight: 400;
   margin: 0 0 0.69em;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 80px;
+  }
 }
 
 .promo__slogan {
   font-size: 0.88rem;
   text-transform: uppercase;
   margin: 0 0 2.14em;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 80px;
+  }
 }
 
 .promo__img {
   width: 100%;
-  max-width: 280px;
+  max-width: 709px;
   height: auto;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width){
+    margin-top: -60px;
+  }
+
+  @media (min-width: $tablet-width){
+    order: 4;
+    z-index: -1;
+    max-width: 550px;
+  }
+}
+
+.promo__get-program {
+  @media (min-width: $tablet-width) {
+    margin-left: 80px;
+  }
 }

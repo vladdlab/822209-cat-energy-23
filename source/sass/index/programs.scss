@@ -6,14 +6,31 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .programs__item {
   padding: 1.25em;
   background: $basic_grey;
 
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    box-sizing: border-box;
+  }
+
   &:first-child {
     margin-bottom: 1.25em;
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+    }
   }
 }
 

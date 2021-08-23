@@ -1,11 +1,25 @@
 .location {
+  background: $white;
   &--grey {
     background-color: $basic_grey;
   }
 }
 
-.location__wrapper {
+.location__info {
+  // display: grid;
+  // grid-template-columns: 1fr 1fr;
+  // gap: 0.5em;
+  display: flex;
+  justify-content: space-between;
   padding: 1.75em 1.25em 1.63em;
+
+  @media (min-width: $tablet-width) {
+    padding: 4.12em 4.44em 3.19em;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
 
 .location__promo {
@@ -13,11 +27,20 @@
   line-height: 1.25;
   text-transform: uppercase;
   margin: 0;
+  max-width: 10.61em;
 }
 
 .location__address {
   font-family: "Arial", serif;
   font-size: 0.88rem;
+  max-width: 11.44em;
   color: $special_dark-grey;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
 }
