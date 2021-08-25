@@ -1,7 +1,7 @@
 .button {
   display: block;
   width: 100%;
-  padding: 0.71em;
+  padding: 0.71em 1.86em;
   text-align: center;
   box-sizing: border-box;
   border: none;
@@ -13,4 +13,8 @@
   text-decoration: none;
 
   background: $basic_green;
+
+  @media (min-width: $tablet-width) {
+    width: fit-content;
+  }
 }

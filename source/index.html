@@ -8,7 +8,7 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__wrapper">
+      <div class="page-header__wrapper wrapper">
 
       <div class="page-header__inner">
         <a class="page-header__logo">
@@ -40,7 +40,7 @@
       <h1 class="visually-hidden">Cat Energy — функциональное питание для котов</h1>
 
       <section class="promo">
-        <div class="promo__wrapper">
+        <div class="promo__wrapper wrapper">
           <h2 class="promo__header">Функциональное питание для котов</h2>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
 
@@ -57,7 +57,7 @@
       </section>
 
       <section class="programs">
-        <div class="programs__wrapper">
+        <div class="programs__wrapper wrapper">
           <h2 class="visually-hidden">Наши программы питания</h2>
 
           <ul class="programs__list">
@@ -83,7 +83,7 @@
       </section>
 
       <section class="workflow">
-        <div class="workflow__wrapper">
+        <div class="workflow__wrapper wrapper">
           <h2 class="workflow__title">Как это работает</h2>
 
           <ul class="workflow__list">
@@ -104,39 +104,45 @@
       </section>
 
       <section class="examples">
-        <div class="examples__wrapper">
-          <h2 class="examples__title">Живой пример</h2>
-          <p class="examples__description">
-            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
-            изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-          </p>
+        <div class="examples__wrapper wrapper">
+          <div class="examples__info">
+            <h2 class="examples__title">Живой пример</h2>
+            <p class="examples__description">
+              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+              изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+            </p>
 
-          <dl class="examples__stats stats">
-            <div class="stats__item stats__item--block">
-              <dt class="stats__number">5 кг</dt>
-              <dd class="stats__description">снижение веса</dd>
-            </div>
+            <dl class="examples__stats stats">
+              <div class="examples__main-stats">
+                <div class="stats__item stats__item--block">
+                  <dt class="stats__number">5 кг</dt>
+                  <dd class="stats__description">снижение веса</dd>
+                </div>
 
-            <div class="stats__item stats__item--block">
-              <dt class="stats__number">60 дней</dt>
-              <dd class="stats__description">затрачено времени</dd>
-            </div>
+                <div class="stats__item stats__item--block">
+                  <dt class="stats__number">60 дней</dt>
+                  <dd class="stats__description">затрачено времени</dd>
+                </div>
+              </div>
 
-            <div class="stats__item stats__item--inline">
-              <dt class="stats__number">15 000 РУБ.</dt>
-              <dd class="stats__description">Затраты на питание:</dd>
-            </div>
-          </dl>
-
-          <div class="examples__images slider">
-            <img class="examples__image slider__item" src="img/cat-fat.png" alt="Худой котик" />
-            <img class="examples__image slider__item" src="img/cat-skinny.png" alt="Полный котик" />
+              <div class="stats__item stats__item--inline">
+                <dt class="stats__number">15 000 РУБ.</dt>
+                <dd class="stats__description">Затраты на питание:</dd>
+              </div>
+            </dl>
           </div>
 
-          <div class="examples__controls">
-            <span class="slider__before">Было</span>
-            <input class="slider__range" type="range" min="0" max="1" id="cat-weight" name="cat-weight" />
-            <span class="slider__after">Cтало</span>
+          <div class="examples__slider">
+            <div class="examples__images slider">
+              <img class="examples__image slider__item" src="img/cat-fat.png" alt="Худой котик" />
+              <img class="examples__image slider__item" src="img/cat-skinny.png" alt="Полный котик" />
+            </div>
+
+            <div class="examples__controls">
+              <span class="slider__before">Было</span>
+              <input class="slider__range" type="range" min="0" max="1" id="cat-weight" name="cat-weight" />
+              <span class="slider__after">Cтало</span>
+            </div>
           </div>
         </div>
       </section>
@@ -146,13 +152,16 @@
       <div class="page-footer__wrapper">
 
         <section class="page-footer__location location">
-          <div class="location__wrapper">
+          <div class="location__wrapper wrapper">
             <h2 class="visually-hidden">Наше местоположение</h2>
 
             <div class="location__info">
               <p class="location__promo">приглашаем к сотрудничеству дилеров!</p>
 
-              <p class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+              <p class="location__address">
+                <span class="location__street">ул. Большая Конюшенная, д. 19/8 </span>
+                <span class="location__city">Санкт-Петербург</span>
+              </p>
             </div>
 
             <div class="location__map">
@@ -161,8 +170,10 @@
           </div>
         </section>
 
-        <div class="page-footer__inner">
-          <img class="page-footer__text-logo text-logo" src="img/text-logo.svg" width="101" height="18" alt="Cat Energy" />
+        <div class="page-footer__inner wrapper">
+          <div class="page-footer__text-logo">
+            <img class="text-logo" src="img/text-logo.svg" width="101" height="18" alt="Cat Energy" />
+          </div>
 
           <section class="page-footer__social social">
             <ul class="social__list">

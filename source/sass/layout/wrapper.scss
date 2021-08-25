@@ -1,0 +1,12 @@
+.wrapper {
+  margin: 0 auto;
+  min-width: $mobile-content-width;
+
+  @media (min-width: $tablet-width) {
+    min-width: $tablet-content-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-content-width;
+  }
+}

@@ -1,3 +1,14 @@
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
+}
+
 .stats__item {
   &--block {
     .stats__number {
