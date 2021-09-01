@@ -8,7 +8,7 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__wrapper">
+      <div class="page-header__wrapper wrapper">
 
       <div class="page-header__inner">
         <a class="page-header__logo">
@@ -37,7 +37,7 @@
     </header>
 
     <main class="page-main">
-      <div class="page-main__wrapper">
+      <div class="page-main__wrapper wrapper">
         <h1 class="page-main__header header header--1">Каталог продукции</h1>
 
         <section class="main-goods">
@@ -211,13 +211,17 @@
                   <a class="good__create-order button" href="#">Заказать</a>
               </article>
             </li>
+
+            <li class="main-goods__item">
+              <article class="main-goods__rest-goods rest-goods">
+                <h3 class="rest-goods__header">Показать еще 100500 товаров</h3>
+                <p class="rest-goods__desc">На самом деле вкусов гораздо больше!</p>
+                <a class="rest_goods__show-more button" href="#">Показать все</a>
+              </article>
+            </li>
           </ul>
 
-          <div class="main-goods__rest-goods rest-goods">
-            <h3 class="rest-goods__header">Показать еще 100500 товаров</h3>
-            <p class="rest-goods__desc">На самом деле вкусов гораздо больше!</p>
-            <a class="rest_goods__show-more button" href="#">Показать все</a>
-          </div>
+
 
         </section>
 
@@ -298,13 +302,16 @@
       <div class="page-footer__wrapper">
 
         <section class="page-footer__location location location--grey">
-          <div class="location__wrapper">
+          <div class="location__wrapper wrapper">
             <h2 class="visually-hidden">Наше местоположение</h2>
 
             <div class="location__info">
               <p class="location__promo">приглашаем к сотрудничеству дилеров!</p>
 
-              <p class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+              <p class="location__address">
+                <span class="location__street">ул. Большая Конюшенная, д. 19/8 </span>
+                <span class="location__city">Санкт-Петербург</span>
+              </p>
             </div>
 
             <div class="location__map">
@@ -313,8 +320,10 @@
           </div>
         </section>
 
-        <div class="page-footer__inner">
-          <img class="page-footer__text-logo text-logo" src="img/text-logo.svg" width="101" height="18" alt="Cat Energy" />
+        <div class="page-footer__inner wrapper">
+          <div class="page-footer__text-logo">
+            <img class="text-logo" src="img/text-logo.svg" width="101" height="18" alt="Cat Energy" />
+          </div>
 
           <section class="page-footer__social social">
             <ul class="social__list">

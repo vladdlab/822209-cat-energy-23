@@ -2,7 +2,39 @@
   padding: 1.25em 1.25em 1.56em;
 
   &--additional {
+    display: flex;
+    flex-direction: column;
     padding: 0.81em 0 1.25em;
+
+    @media (min-width: $tablet-width) {
+      flex-wrap: wrap;
+      flex-direction: row;
+      padding: 0.81em 0;
+
+      .good__name {
+        margin: 0;
+      }
+
+      .good__info {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 1em;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-wrap: nowrap;
+
+      .good__info {
+        flex: 3 1 auto;
+      }
+
+      .good__create-order {
+        flex: 1 2 auto;
+      }
+    }
   }
 }
 
@@ -12,4 +44,8 @@
   line-height: 1.25;
   margin: 0 0 0.94em;
   text-transform: uppercase;
+}
+
+.good__create-order {
+  width: 100%;
 }

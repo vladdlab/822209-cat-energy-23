@@ -1,11 +1,30 @@
+.additional-goods {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 2fr 1fr;
+    gap: 0 3em;
+    margin-bottom: 5em;
+  }
+}
+
 .additional-goods__header {
   margin: 1.04em 0.83em 1.46em;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/3;
+  }
 }
 
 .additional-goods__list {
   list-style: none;
   margin: 0;
   padding: 1.25em 1.25em 0;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .additional-goods__item {
@@ -18,4 +37,8 @@
 
 .additional-goods__gift {
   margin: 2.1em 1.25em;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
