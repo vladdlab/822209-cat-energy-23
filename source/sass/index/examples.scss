@@ -1,6 +1,18 @@
-.examples__wrapper {
-  padding: 1.88em 1.25em;
+.examples {
   background-color: #eaeaea;
+}
+
+.examples__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  padding: 1.88em 1.25em;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 2fr;
+    max-height: 500px;
+    flex-wrap: wrap;
+  }
 }
 
 .examples__title {
@@ -16,6 +28,17 @@
   font-size: 0.88rem;
   color: $special_dark-grey;
   margin: 0 0 1.78em;
+}
+
+.examples__main-stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
 }
 
 .examples__image {
